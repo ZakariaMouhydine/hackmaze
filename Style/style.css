@@ -1,0 +1,28 @@
+/* #maze {
+    border: 1px solid #000;
+    cursor: none;
+    height: 800px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+} */
+/* 
+div.boundary {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+div.boundary.example {
+	margin: auto;
+	width: 300px;
+	height: 50px;
+}
+
+@media only screen and (min-height: 1000px), screen and (max-width: 1000px) {
+    #maze {
+        height: 400px;
+        width: 400px;
+    }
+} */
