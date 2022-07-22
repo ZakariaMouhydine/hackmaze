@@ -1,20 +1,22 @@
-const canvas = document.getElementById('maze');
-const startStage = document.getElementById('start');
-console.log(startStage);
-const startPos = startStage.getBoundingClientRect();
+const canvas = document.getElementById("inside_path");
+console.log(canvas);
+// const startStage = document.getElementById("start");
+// // console.log(startStage);
+// const startPos = startStage.getBoundingClientRect();
+
 // dots is an array of Dot objects,
 // mouse is an object used to track the X and Y position
    // of the mouse, set with a mousemove event listener below
    var dots = [],
    mouse = {
-     x: startPos.left + 40,
-     y: startPos.top + 25
+     x: 0,
+     y: 0
    };
 
 // The Dot object used to scaffold the dots
 var Dot = function() {
- this.x = startPos.left + 40;
- this.y = startPos.top + 25;
+ this.x = 0;
+ this.y = 0;
  this.node = (function(){
    var n = document.createElement("div");
    n.className = "trail";
