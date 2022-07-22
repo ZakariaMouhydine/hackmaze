@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>a_maze_in</title>
+    <link rel="stylesheet" href="../Style/style.css" />
+    <link rel="stylesheet" href="../Style/maze.css" />
+    <link rel="stylesheet" href="../Style/cursor.css" />
+    <link rel="stylesheet" href="../Style/timer.css" />
+
+
+
+</head>
+
+<body>
+    <div class="grayscreen"></div>
+    <h1><strong>Level 1!</strong></h1> 
+
+    <div class="container">
+        <h2 id="counter"> 3:00 </h2>
+    </div>
+
+
+    <div class ="game game_config">
+
+        <div id="maze">
+            
+            <svg id="maze_shape", viewBox="0 0 780 336" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <mask id="path_outside" maskUnits="userSpaceOnUse" x="27" y="20" width="696" height="285" fill="black">
+                    <rect id = "out_maze_border", fill="white" x="27" y="20" width="696" height="285"/>
+                    <path id = "in_maze_border" fill-rule="evenodd" clip-rule="evenodd" d="M369 25H463H718V98H463V222V244V300H32V222H369V25Z"/>
+                </mask>
+                <path id="inside_path", fill-rule="evenodd" clip-rule="evenodd" d="M369 25H463H718V98H463V222V244V300H32V222H369V25Z" fill="#FE7C04"/>
+                <path class="collision", d="M369 25V20H364V25H369ZM718 25H723V20H718V25ZM718 98V103H723V98H718ZM463 98V93H458V98H463ZM463 300V305H468V300H463ZM32 300H27V305H32V300ZM32 222V217H27V222H32ZM369 222V227H374V222H369ZM463 20H369V30H463V20ZM463 30H718V20H463V30ZM713 25V98H723V25H713ZM718 93H463V103H718V93ZM468 222V98H458V222H468ZM468 244V222H458V244H468ZM468 300V244H458V300H468ZM32 305H463V295H32V305ZM27 222V300H37V222H27ZM369 217H32V227H369V217ZM364 25V222H374V25H364Z" fill="#FF0000" mask="url(#path-1-outside-1_0_1)"/>
+                <rect id="start", y="195" width="86" height="141" fill="#18FE04"/>
+                <text id="start-text" y="265" x="27" fill="#000" >Start</text>
+                <rect id="finish", x="697" width="83" height="125" fill="#FF0000"/>
+                <text id="finish-text", y="65", x="720", fill="#000">Finish</text>
+                <!-- <text id="finish-text"y="65" x="720" fill="#000" >Fin</text> -->
+            </svg>   
+        
+            <button class="start-btn">START</button>
+        </div>
+
+       
+    </div>
+    
+    <script src="../Scripts/index.js"></script>
+    <script src="../Scripts/cursor.js"></script>
+    <script src="../Scripts/timer.js"></script>
+
+    
+
+
+</body>

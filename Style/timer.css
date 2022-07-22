@@ -1,0 +1,33 @@
+body{
+    background-color: #000;
+}
+@font-face{
+ font-family: sevenSegment;
+    src: url(Seven-Segment.ttf);
+  
+} 
+
+#counter{
+    font-family: sevenSegment;
+    color: white;
+    /* -webkit-box-reflect:
+    below 0-
+    webkit-gradient( linear, left top, left bottom, from(transparent), 
+    color-stop(20%, transparent), to (rgba(255,255,255,0.4))); */
+
+}
+
+h2{
+    text-align: center;
+    color: white;
+    font-size:25px;
+}
+
+
+/* 
+.container {
+    background-color: aqua; */
+    
+    /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); */

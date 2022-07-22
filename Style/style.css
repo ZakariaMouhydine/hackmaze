@@ -1,0 +1,64 @@
+/* Union */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.game_config {
+    /* cursor: none; */
+}
+
+.grayscreen {
+	background: #808080;
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	opacity: 0.8;
+	width: 100%;
+	z-index: 998;
+}
+
+.start-btn {
+	background: #18FE04;
+	border: none;
+	cursor: pointer;
+	font-size: 1.5rem;
+	font-weight: bold;
+	position: absolute;
+	z-index: 999;
+}
+
+#finish-text {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-weight: bold;
+}
+
+/* #maze {
+    border: 1px solid #000;
+    cursor: none;
+    height: 800px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 800px;
+} */
+/* 
+div.boundary {
+	background-color: #eeeeee;
+	border: 1px solid black;
+}
+
+div.boundary.example {
+	margin: auto;
+	width: 300px;
+	height: 50px;
+}
+
+@media only screen and (min-height: 1000px), screen and (max-width: 1000px) {
+    #maze {
+        height: 400px;
+        width: 400px;
+    }
+} */
