@@ -1,14 +1,22 @@
+document.querySelector(".start-btn").addEventListener("click", function() {
 //Timer starts at 10:00 and countsdown to 09:59 onwards, the below sets these variables
 let minute = 2;
 let second = 60;
 // in built function being used setInterval **repeat a specified function at every given time-interval.**
-setInterval( () => {
+let interval = setInterval( () => {
+
+    if (grayScreen.style.display === "block") {
+        clearInterval(interval);
+    }
+
     if (minute == 0 && second == 1) {
         document.getElementById("counter").innerHTML ="00:00";
     }
+
 //Unless the counter is == 00:00 the following the second will reduce by 1
     else {
         second--;
+
         // Once the second has be reduced to 00 then the minute will be reduced by 1
         if (second == 0) {
             minute--;
@@ -29,3 +37,6 @@ setInterval( () => {
     }
     // countdown 1000 times from the interval function as the timer in .html is set as 10:00
 }, 1000);
+
+});
+

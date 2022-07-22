@@ -1,5 +1,6 @@
 .trail { /* className for the trail elements */
-    cursor: none;
+    /* cursor: wait; */
+    opacity: 0.4;
     position: absolute;
     height: 10px; width: 10px;
     border-radius: 10px;
